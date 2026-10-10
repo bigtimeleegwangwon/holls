@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0",
+  "note": "해상 초크포인트 — 좌표 반경으로는 BP를 잡을 수 없는 유형. 실제 점검 발송 사례(호르무즈 봉쇄)가 여기 속한다. dependentCountries 는 '이 항로를 지나는 화물의 원산국'이며, 그 국가에 사이트를 둔 BP가 영향 후보가 된다.\n\nimpact 값: direct_route(항로 의존 원산국 BP 매칭) · broad_warning(원재료 경로 — 위험 소재군의 전 BP 전방위 경고).",
+  "chokepoints": [
+    {
+      "id": "HORMUZ",
+      "nameKo": "호르무즈 해협",
+      "aliases": [
+        "호르무즈",
+        "Hormuz",
+        "Strait of Hormuz",
+        "ホルムズ",
+        "霍尔木兹"
+      ],
+      "lat": 26.57,
+      "lon": 56.25,
+      "radiusKm": 250,
+      "impact": "broad_warning",
+      "dependentCountries": [],
+      "materialGroupsAtRisk": [
+        "Gas",
+        "Chemical",
+        "Precursor"
+      ],
+      "note": "원유·LNG 경로. 특정 BP의 생산 중단이 아니라 원재료 조달 자체가 흔들리므로, 위험 소재군의 전 BP를 경고 대상으로 삼는다.",
+      "rawMaterials": [
+        "헬륨",
+        "나프타계 원료"
+      ],
+      "precedent": "카타르 LNG 시설 피격 시 헬륨 공급망 문제가 실제로 발생했다. 헬륨은 LNG 부산물이라 중동 에너지 차질이 곧 특수가스 차질이 된다. 원재료는 대체 조달이 어려워 지리 근접과 무관하게 전방위로 본다."
+    },
+    {
+      "id": "MALACCA",
+      "nameKo": "말라카 해협",
+      "aliases": [
+        "말라카",
+        "Malacca",
+        "Strait of Malacca",
+        "マラッカ",
+        "马六甲"
+      ],
+      "lat": 2.5,
+      "lon": 101.5,
+      "radiusKm": 300,
+      "impact": "direct_route",
+      "dependentCountries": [
+        "EU",
+        "DE",
+        "FR",
+        "IE",
+        "BE",
+        "AT",
+        "NL",
+        "US"
+      ],
+      "materialGroupsAtRisk": [],
+      "note": "유럽·미주發 화물이 동아시아로 들어오는 주 항로. 해당 원산국 BP의 출하 리드타임에 직접 영향."
+    },
+    {
+      "id": "SUEZ",
+      "nameKo": "수에즈 운하",
+      "aliases": [
+        "수에즈",
+        "Suez",
+        "Suez Canal",
+        "スエズ",
+        "苏伊士"
+      ],
+      "lat": 30.0,
+      "lon": 32.55,
+      "radiusKm": 200,
+      "impact": "direct_route",
+      "dependentCountries": [
+        "EU",
+        "DE",
+        "FR",
+        "IE",
+        "BE",
+        "AT",
+        "NL"
+      ],
+      "materialGroupsAtRisk": [],
+      "note": "유럽發 소재의 아시아 항로. 우회 시 통상 10~14일 추가."
+    },
+    {
+      "id": "TAIWAN_STRAIT",
+      "nameKo": "대만 해협",
+      "aliases": [
+        "대만해협",
+        "대만 해협",
+        "Taiwan Strait",
+        "台湾海峡",
+        "台灣海峽"
+      ],
+      "lat": 24.0,
+      "lon": 119.0,
+      "radiusKm": 250,
+      "impact": "direct_route",
+      "dependentCountries": [
+        "TW",
+        "CN"
+      ],
+      "materialGroupsAtRisk": [],
+      "note": "대만·중국發 화물 항로. 웨이퍼·타깃 조달에 직접 영향."
+    },
+    {
+      "id": "PANAMA",
+      "nameKo": "파나마 운하",
+      "aliases": [
+        "파나마 운하",
+        "Panama Canal",
+        "パナマ運河",
+        "巴拿马运河"
+      ],
+      "lat": 9.08,
+      "lon": -79.68,
+      "radiusKm": 200,
+      "impact": "direct_route",
+      "dependentCountries": [
+        "US"
+      ],
+      "materialGroupsAtRisk": [],
+      "note": "미주 동안發 화물. 가뭄에 따른 통항 제한 선례가 있다."
+    }
+  ]
+}

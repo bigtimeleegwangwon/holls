@@ -1,0 +1,34 @@
+# mbridgephp — 진입은 index.php 하나다.
+# 이 폴더를 DocumentRoot 바로 아래 두어도, 하위 폴더(/mbridgephp/)에 두어도 그대로 동작한다.
+# 필요한 것: mod_rewrite 켜짐 + 이 디렉터리에 AllowOverride All
+
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 코드·데이터 폴더는 웹에서 직접 열 수 없다 (static/ 만 예외)
+  RewriteRule ^(lib|routes|pages|data|cron)(/|$) - [F,L]
+  RewriteRule ^(config\.php|VERSION|README\.md)$ - [F,L]
+
+  # 실재하는 파일(static/*)은 그대로 서빙
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # 나머지는 전부 index.php
+  RewriteRule ^ index.php [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  # mod_rewrite 가 없으면 /index.php/dashboard 형태로도 동작한다 (Http::routeKey 참고)
+  DirectoryIndex index.php
+</IfModule>
+
+# 정적 파일 캐시
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType font/woff2 "access plus 30 days"
+  ExpiresByType image/png  "access plus 7 days"
+</IfModule>
+AddType font/woff2 .woff2

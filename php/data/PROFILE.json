@@ -1,0 +1,10 @@
+{
+ "profile": "mock",
+ "as_of": "2026-08-26",
+ "seed": 20260826,
+ "bps": 100,
+ "sites": 300,
+ "what_is_real": "필드 · 분포 · 규모 · 판정 규칙 · 공개 지리(행정구역 중심점) · 정책 파일(권역 분류·임계값·초크포인트)",
+ "what_is_generated": "BP 이름 · 사업장 이름·주소 · 담당자 이름·전화·이메일(example.com) · 좌표 미세 이동",
+ "swap": "MGSCS_DATA_DIR=/path/to/real/data_json 으로 실행하면 코드 변경 없이 실데이터로 동작"
+}

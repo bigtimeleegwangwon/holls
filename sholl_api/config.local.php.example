@@ -1,0 +1,22 @@
+<?php
+// ⚠️ config.local.php 에 정보를 입력하세요 (이 파일은 .example 버전입니다)
+// config.local.php는 .gitignore에 추가되어 저장소에 업로드되지 않습니다.
+
+// Google OAuth
+// 1. Google Cloud Console에서 앱 등록: https://console.cloud.google.com/
+// 2. OAuth 2.0 클라이언트 ID 생성 (웹 애플리케이션)
+// 3. 리다이렉트 URI 추가: https://getupearly.mycafe24.com/sholl_api/auth/google/callback
+define('GOOGLE_CLIENT_ID', 'your-google-client-id.apps.googleusercontent.com');
+define('GOOGLE_CLIENT_SECRET', 'your-google-client-secret');
+
+// Kakao OAuth (Stage 3에서 추가)
+// define('KAKAO_CLIENT_ID', 'your-kakao-client-id');
+// define('KAKAO_CLIENT_SECRET', 'your-kakao-client-secret');
+
+// Naver OAuth (Stage 3에서 추가)
+// define('NAVER_CLIENT_ID', 'your-naver-client-id');
+// define('NAVER_CLIENT_SECRET', 'your-naver-client-secret');
+
+// GitHub OAuth (Stage 3에서 추가)
+// define('GITHUB_CLIENT_ID', 'your-github-client-id');
+// define('GITHUB_CLIENT_SECRET', 'your-github-client-secret');

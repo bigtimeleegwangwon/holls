@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "2.0",
+  "lookbackHours": 6,
+  "stateRetentionDays": 90,
+  "requireBpMatch": true,
+  "bpMatch": {
+    "sameAdministrativeArea": true,
+    "sameRegion": true,
+    "distanceEligiblePrecision": [
+      "verified_site",
+      "address"
+    ],
+    "radiusKmByHazard": {
+      "earthquake": 150,
+      "tsunami": 50,
+      "cyclone": 300,
+      "flood": 100,
+      "volcano": 150,
+      "wildfire": 75
+    }
+  },
+  "countries": {
+    "JP": {
+      "earthquake": {
+        "intensityScale": "JMA",
+        "intensityWarning": "5-",
+        "intensityCritical": "6-",
+        "regionalMagnitudeWarning": 5.5,
+        "regionalMagnitudeCritical": 6.5,
+        "fallbackSourcePolicy": "USGS_ONLY_WHEN_JMA_UNAVAILABLE"
+      },
+      "tsunami": {
+        "warningLevels": ["warning"],
+        "criticalLevels": ["major_warning"]
+      }
+    },
+    "KR": {
+      "earthquake": {
+        "intensityScale": "KMA_MMI",
+        "intensityWarning": "V",
+        "intensityCritical": "VI",
+        "regionalMagnitudeWarning": 4,
+        "regionalMagnitudeCritical": 5.5,
+        "fallbackSourcePolicy": "USGS_FALLBACK_UNTIL_KMA_ADAPTER"
+      }
+    },
+    "CN": {
+      "earthquake": {
+        "intensityScale": "CSIS",
+        "intensityWarning": "VI",
+        "intensityCritical": "VII",
+        "regionalMagnitudeWarning": 5,
+        "regionalMagnitudeCritical": 6,
+        "fallbackSourcePolicy": "USGS_FALLBACK_UNTIL_CENC_ADAPTER"
+      }
+    },
+    "TW": {
+      "earthquake": {
+        "intensityScale": "CWA",
+        "intensityWarning": "5-",
+        "intensityCritical": "6-",
+        "regionalMagnitudeWarning": 5,
+        "regionalMagnitudeCritical": 6,
+        "fallbackSourcePolicy": "USGS_FALLBACK_UNTIL_CWA_ADAPTER"
+      },
+      "tsunami": {
+        "warningLevels": ["warning"],
+        "criticalLevels": ["major_warning"]
+      }
+    }
+  },
+  "gdacs": {
+    "warningLevels": ["Orange"],
+    "criticalLevels": ["Red"],
+    "enabledEventTypes": ["TC", "FL", "VO", "WF"],
+    "requireRegionalBpMatch": true
+  }
+}

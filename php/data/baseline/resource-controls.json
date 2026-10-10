@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "note": "자원 무기화·수출통제 — 지리로 판정할 수 없는 유형. 사건은 정책·분쟁 지역에서 일어나지만 영향은 '그 원료를 쓰는 모든 BP'에 전방위로 퍼진다. 원재료(헬륨·희토류·불화수소 등)는 대체 조달이 어려워 한 건이 전 소재군을 흔든다.\n\n선을 이렇게 잡은 근거는 빈도다. 실제 발생 사례는 수년에 걸쳐 아래 3건뿐이며, 그래서 임계를 낮춰 전방위로 경고해도 알림이 넘치지 않는다. 지리 근접(G1)을 요구하지 않는 유일한 경로다.",
+  "controls": [
+    {
+      "id": "LNG_HELIUM",
+      "nameKo": "LNG 공급 차질 → 헬륨",
+      "aliases": [
+        "카타르", "Qatar", "LNG", "액화천연가스", "천연가스 시설",
+        "헬륨", "helium", "ヘリウム", "氦"
+      ],
+      "requireContext": ["피격", "공습", "폭발", "화재", "중단", "봉쇄", "수출", "부족", "strike", "attack", "halt", "shortage", "outage"],
+      "materialGroupsAtRisk": ["Gas"],
+      "rawMaterials": ["헬륨"],
+      "precedent": "카타르 LNG 시설 피격으로 헬륨 공급망 문제 발생. 헬륨은 LNG 생산 부산물이라 LNG 차질이 곧 헬륨 차질로 이어진다. 반도체 공정 냉각·퍼지에 직접 쓰이고 대체가 어렵다.",
+      "impact": "broad_warning"
+    },
+    {
+      "id": "CN_CRITICAL_MINERALS",
+      "nameKo": "중국 핵심광물 수출통제",
+      "aliases": [
+        "희토류", "rare earth", "稀土", "갈륨", "gallium", "镓",
+        "게르마늄", "germanium", "锗", "안티몬", "antimony", "锑",
+        "텅스텐", "tungsten", "钨", "흑연", "graphite"
+      ],
+      "requireContext": ["수출 통제", "수출통제", "수출 규제", "수출 제한", "수출 금지", "출口管制", "出口管制", "export control", "export restriction", "export ban", "허가", "무기화"],
+      "materialGroupsAtRisk": ["Target", "Precursor", "Gas"],
+      "rawMaterials": ["갈륨", "게르마늄", "안티몬", "희토류", "텅스텐"],
+      "precedent": "2023년 중국의 갈륨·게르마늄 수출통제. 화합물 반도체·스퍼터 타깃 원료의 중국 의존도가 높아 단일 정책으로 전 조달선이 흔들렸다.",
+      "impact": "broad_warning"
+    },
+    {
+      "id": "JP_EXPORT_CONTROL",
+      "nameKo": "일본 대한 수출규제 (J-Risk)",
+      "aliases": [
+        "불화수소", "고순도 불화수소", "에칭가스", "フッ化水素",
+        "포토레지스트", "감광액", "フォトレジスト", "photoresist",
+        "불화폴리이미드", "플루오린 폴리이미드", "フッ化ポリイミド",
+        "화이트리스트", "백색국가", "ホワイト国", "전략물자"
+      ],
+      "requireContext": ["수출 규제", "수출규제", "수출 통제", "개별 허가", "포괄 허가", "제외", "배제", "輸出規制", "export control", "export restriction"],
+      "materialGroupsAtRisk": ["Photo", "Chemical", "Gas"],
+      "rawMaterials": ["불화수소", "포토레지스트", "불화폴리이미드"],
+      "precedent": "2019년 일본의 대한 수출규제 3품목. 소재 단위로 특정해 규제한 사례이며 mGSCS 키워드 체계의 J-Risk 항목이 여기서 나왔다.",
+      "impact": "broad_warning"
+    }
+  ]
+}

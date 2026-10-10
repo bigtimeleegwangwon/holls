@@ -1,0 +1,578 @@
+{
+  "schemaVersion": "1.0",
+  "policy": {
+    "authoritativeField": "regionCode",
+    "coordinateUse": "verified_site_only",
+    "regionalAnchorUse": "display_only",
+    "unmappedPolicy": "exclude_from_distance_matching"
+  },
+  "countries": {
+    "KR": {
+      "nameKo": "한국",
+      "intensityScale": "KMA_MMI",
+      "regions": [
+        {
+          "code": "KR-SUDOGWON",
+          "name": "Sudogwon",
+          "nameKo": "수도권",
+          "aliases": [
+            "서울",
+            "서울특별시",
+            "Seoul",
+            "인천",
+            "인천광역시",
+            "Incheon",
+            "경기",
+            "경기도",
+            "Gyeonggi",
+            "수원",
+            "화성",
+            "평택",
+            "안성",
+            "송도"
+          ]
+        },
+        {
+          "code": "KR-CHUNGCHEONG",
+          "name": "Chungcheong",
+          "nameKo": "충청권",
+          "aliases": [
+            "대전",
+            "대전광역시",
+            "Daejeon",
+            "세종",
+            "세종특별자치시",
+            "Sejong",
+            "충북",
+            "충청북도",
+            "Chungbuk",
+            "충남",
+            "충청남도",
+            "Chungnam",
+            "천안",
+            "청주",
+            "진천",
+            "당진"
+          ]
+        },
+        {
+          "code": "KR-HONAM",
+          "name": "Honam",
+          "nameKo": "호남권",
+          "aliases": [
+            "광주",
+            "광주광역시",
+            "Gwangju",
+            "전북",
+            "전북특별자치도",
+            "전라북도",
+            "Jeonbuk",
+            "전남",
+            "전라남도",
+            "Jeonnam",
+            "익산",
+            "군산",
+            "여수"
+          ]
+        },
+        {
+          "code": "KR-YEONGNAM",
+          "name": "Yeongnam",
+          "nameKo": "영남권",
+          "aliases": [
+            "부산",
+            "부산광역시",
+            "Busan",
+            "대구",
+            "대구광역시",
+            "Daegu",
+            "울산",
+            "울산광역시",
+            "Ulsan",
+            "경북",
+            "경상북도",
+            "Gyeongbuk",
+            "경남",
+            "경상남도",
+            "Gyeongnam",
+            "구미",
+            "성주"
+          ]
+        },
+        {
+          "code": "KR-GANGWON",
+          "name": "Gangwon",
+          "nameKo": "강원권",
+          "aliases": [
+            "강원",
+            "강원특별자치도",
+            "강원도",
+            "Gangwon"
+          ]
+        },
+        {
+          "code": "KR-JEJU",
+          "name": "Jeju",
+          "nameKo": "제주권",
+          "aliases": [
+            "제주",
+            "제주특별자치도",
+            "Jeju"
+          ]
+        }
+      ]
+    },
+    "CN": {
+      "nameKo": "중국",
+      "intensityScale": "CSIS",
+      "regions": [
+        {
+          "code": "CN-NORTHEAST",
+          "name": "Northeast China",
+          "nameKo": "동북권",
+          "aliases": [
+            "辽宁",
+            "辽宁省",
+            "Liaoning",
+            "吉林",
+            "吉林省",
+            "Jilin",
+            "黑龙江",
+            "黑龙江省",
+            "Heilongjiang"
+          ]
+        },
+        {
+          "code": "CN-NORTH",
+          "name": "North China",
+          "nameKo": "화북권",
+          "aliases": [
+            "北京",
+            "北京市",
+            "Beijing",
+            "天津",
+            "天津市",
+            "Tianjin",
+            "河北",
+            "河北省",
+            "Hebei",
+            "山西",
+            "山西省",
+            "Shanxi",
+            "内蒙古",
+            "内蒙古自治区",
+            "Inner Mongolia"
+          ]
+        },
+        {
+          "code": "CN-EAST",
+          "name": "East China",
+          "nameKo": "화동권",
+          "aliases": [
+            "上海",
+            "上海市",
+            "Shanghai",
+            "江苏",
+            "江苏省",
+            "Jiangsu",
+            "浙江",
+            "浙江省",
+            "Zhejiang",
+            "安徽",
+            "安徽省",
+            "Anhui",
+            "福建",
+            "福建省",
+            "Fujian",
+            "江西",
+            "江西省",
+            "Jiangxi",
+            "山东",
+            "山东省",
+            "Shandong",
+            "宁波",
+            "Ningbo"
+          ]
+        },
+        {
+          "code": "CN-CENTRAL-SOUTH",
+          "name": "Central and South China",
+          "nameKo": "중남권",
+          "aliases": [
+            "河南",
+            "河南省",
+            "Henan",
+            "湖北",
+            "湖北省",
+            "Hubei",
+            "湖南",
+            "湖南省",
+            "Hunan",
+            "广东",
+            "广东省",
+            "Guangdong",
+            "广西",
+            "广西壮族自治区",
+            "Guangxi",
+            "海南",
+            "海南省",
+            "Hainan"
+          ]
+        },
+        {
+          "code": "CN-SOUTHWEST",
+          "name": "Southwest China",
+          "nameKo": "서남권",
+          "aliases": [
+            "重庆",
+            "重庆市",
+            "Chongqing",
+            "四川",
+            "四川省",
+            "Sichuan",
+            "贵州",
+            "贵州省",
+            "Guizhou",
+            "云南",
+            "云南省",
+            "Yunnan",
+            "西藏",
+            "西藏自治区",
+            "Tibet"
+          ]
+        },
+        {
+          "code": "CN-NORTHWEST",
+          "name": "Northwest China",
+          "nameKo": "서북권",
+          "aliases": [
+            "陕西",
+            "陕西省",
+            "Shaanxi",
+            "甘肃",
+            "甘肃省",
+            "Gansu",
+            "青海",
+            "青海省",
+            "Qinghai",
+            "宁夏",
+            "宁夏回族自治区",
+            "Ningxia",
+            "新疆",
+            "新疆维吾尔自治区",
+            "Xinjiang"
+          ]
+        }
+      ]
+    },
+    "JP": {
+      "nameKo": "일본",
+      "intensityScale": "JMA",
+      "regions": [
+        {
+          "code": "JP-HOKKAIDO",
+          "name": "Hokkaido",
+          "nameKo": "홋카이도",
+          "aliases": ["北海道", "Hokkaido", "홋카이도"]
+        },
+        {
+          "code": "JP-TOHOKU",
+          "name": "Tohoku",
+          "nameKo": "도호쿠",
+          "aliases": [
+            "青森",
+            "岩手",
+            "宮城",
+            "秋田",
+            "山形",
+            "福島",
+            "Aomori",
+            "Iwate",
+            "Miyagi",
+            "Akita",
+            "Yamagata",
+            "Fukushima",
+            "아오모리",
+            "이와테",
+            "미야기",
+            "아키타",
+            "야마가타",
+            "후쿠시마",
+            "Tohoku",
+            "도호쿠"
+          ]
+        },
+        {
+          "code": "JP-KANTO",
+          "name": "Kanto",
+          "nameKo": "간토",
+          "aliases": [
+            "茨城",
+            "栃木",
+            "群馬",
+            "埼玉",
+            "千葉",
+            "東京",
+            "神奈川",
+            "Ibaraki",
+            "Tochigi",
+            "Gunma",
+            "Saitama",
+            "Chiba",
+            "Tokyo",
+            "Kanagawa",
+            "이바라키",
+            "도치기",
+            "군마",
+            "사이타마",
+            "지바",
+            "치바",
+            "도쿄",
+            "가나가와",
+            "Kanto",
+            "간토",
+            "관동"
+          ]
+        },
+        {
+          "code": "JP-CHUBU",
+          "name": "Chubu",
+          "nameKo": "주부",
+          "aliases": [
+            "新潟",
+            "富山",
+            "石川",
+            "福井",
+            "山梨",
+            "長野",
+            "岐阜",
+            "静岡",
+            "愛知",
+            "Niigata",
+            "Toyama",
+            "Ishikawa",
+            "Fukui",
+            "Yamanashi",
+            "Nagano",
+            "Gifu",
+            "Shizuoka",
+            "Aichi",
+            "니가타",
+            "도야마",
+            "이시카와",
+            "후쿠이",
+            "야마나시",
+            "나가노",
+            "기후",
+            "시즈오카",
+            "아이치",
+            "Chubu",
+            "주부"
+          ]
+        },
+        {
+          "code": "JP-KANSAI",
+          "name": "Kansai",
+          "nameKo": "간사이",
+          "aliases": [
+            "三重",
+            "滋賀",
+            "京都",
+            "大阪",
+            "兵庫",
+            "奈良",
+            "和歌山",
+            "Mie",
+            "Shiga",
+            "Kyoto",
+            "Osaka",
+            "Hyogo",
+            "Nara",
+            "Wakayama",
+            "미에",
+            "시가",
+            "교토",
+            "오사카",
+            "효고",
+            "나라",
+            "와카야마",
+            "Kansai",
+            "Kinki",
+            "간사이",
+            "긴키"
+          ]
+        },
+        {
+          "code": "JP-CHUGOKU",
+          "name": "Chugoku",
+          "nameKo": "주고쿠",
+          "aliases": [
+            "鳥取",
+            "島根",
+            "岡山",
+            "広島",
+            "山口",
+            "Tottori",
+            "Shimane",
+            "Okayama",
+            "Hiroshima",
+            "Yamaguchi",
+            "돗토리",
+            "시마네",
+            "오카야마",
+            "히로시마",
+            "야마구치",
+            "Chugoku",
+            "주고쿠"
+          ]
+        },
+        {
+          "code": "JP-SHIKOKU",
+          "name": "Shikoku",
+          "nameKo": "시코쿠",
+          "aliases": [
+            "徳島",
+            "香川",
+            "愛媛",
+            "高知",
+            "Tokushima",
+            "Kagawa",
+            "Ehime",
+            "Kochi",
+            "도쿠시마",
+            "가가와",
+            "에히메",
+            "고치",
+            "Shikoku",
+            "시코쿠"
+          ]
+        },
+        {
+          "code": "JP-KYUSHU-OKINAWA",
+          "name": "Kyushu and Okinawa",
+          "nameKo": "규슈·오키나와",
+          "aliases": [
+            "福岡",
+            "佐賀",
+            "長崎",
+            "熊本",
+            "大分",
+            "宮崎",
+            "鹿児島",
+            "沖縄",
+            "Fukuoka",
+            "Saga",
+            "Nagasaki",
+            "Kumamoto",
+            "Oita",
+            "Miyazaki",
+            "Kagoshima",
+            "Okinawa",
+            "후쿠오카",
+            "사가",
+            "나가사키",
+            "구마모토",
+            "오이타",
+            "미야자키",
+            "가고시마",
+            "오키나와",
+            "Kyushu",
+            "규슈",
+            "오키나와"
+          ]
+        }
+      ]
+    },
+    "TW": {
+      "nameKo": "대만",
+      "intensityScale": "CWA",
+      "regions": [
+        {
+          "code": "TW-NORTH",
+          "name": "Northern Taiwan",
+          "nameKo": "북부권",
+          "aliases": [
+            "臺北",
+            "台北",
+            "Taipei",
+            "新北",
+            "New Taipei",
+            "基隆",
+            "Keelung",
+            "桃園",
+            "Taoyuan",
+            "新竹",
+            "Hsinchu",
+            "북부"
+          ]
+        },
+        {
+          "code": "TW-CENTRAL",
+          "name": "Central Taiwan",
+          "nameKo": "중부권",
+          "aliases": [
+            "苗栗",
+            "Miaoli",
+            "臺中",
+            "台中",
+            "Taichung",
+            "彰化",
+            "Changhua",
+            "南投",
+            "Nantou",
+            "雲林",
+            "Yunlin",
+            "중부"
+          ]
+        },
+        {
+          "code": "TW-SOUTH",
+          "name": "Southern Taiwan",
+          "nameKo": "남부권",
+          "aliases": [
+            "嘉義",
+            "Chiayi",
+            "臺南",
+            "台南",
+            "Tainan",
+            "高雄",
+            "Kaohsiung",
+            "屏東",
+            "Pingtung",
+            "남부"
+          ]
+        },
+        {
+          "code": "TW-EAST",
+          "name": "Eastern Taiwan",
+          "nameKo": "동부권",
+          "aliases": [
+            "宜蘭",
+            "Yilan",
+            "花蓮",
+            "Hualien",
+            "臺東",
+            "台東",
+            "Taitung",
+            "동부"
+          ]
+        },
+        {
+          "code": "TW-ISLANDS",
+          "name": "Offshore Islands",
+          "nameKo": "도서권",
+          "aliases": [
+            "澎湖",
+            "Penghu",
+            "金門",
+            "Kinmen",
+            "連江",
+            "Lienchiang",
+            "Matsu",
+            "도서"
+          ]
+        }
+      ]
+    }
+  }
+}

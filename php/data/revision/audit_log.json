@@ -1,0 +1,50 @@
+[
+    {
+        "timestamp": "2026-09-03T20:48:33+09:00",
+        "actor": "20202020",
+        "action": "auth.setup",
+        "detail": "최초 비밀번호 설정"
+    },
+    {
+        "timestamp": "2026-09-03T20:52:07+09:00",
+        "actor": "20202020",
+        "action": "signals.ingest",
+        "detail": "browser → 신규 64건"
+    },
+    {
+        "timestamp": "2026-09-03T20:55:32+09:00",
+        "actor": "20202020",
+        "action": "signals.ingest",
+        "detail": "browser → 신규 32건"
+    },
+    {
+        "timestamp": "2026-09-03T20:58:08+09:00",
+        "actor": "20202020",
+        "action": "export.hotline",
+        "detail": "연락처 양식 300행"
+    },
+    {
+        "timestamp": "2026-09-03T21:01:52+09:00",
+        "actor": "20202020",
+        "action": "signals.ingest",
+        "detail": "browser → 신규 2건"
+    },
+    {
+        "timestamp": "2026-09-03T21:25:57+09:00",
+        "actor": "20202020",
+        "action": "signals.ingest",
+        "detail": "browser → 신규 1건"
+    },
+    {
+        "timestamp": "2026-09-03T23:06:44+09:00",
+        "actor": "20202020",
+        "action": "signals.ingest",
+        "detail": "browser → 신규 6건"
+    },
+    {
+        "timestamp": "2026-09-03T23:37:59+09:00",
+        "actor": "20202020",
+        "action": "signals.ingest",
+        "detail": "browser → 신규 3건"
+    }
+]

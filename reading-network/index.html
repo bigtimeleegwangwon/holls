@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>독서 개념 네트워크</title>
+  <link rel="stylesheet" href="style.css?v=3">
+  <script>
+    // FOUC 방지: CSS 로드 전에 테마 설정
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.dataset.theme = theme;
+  </script>
+</head>
+<body class="viz-root">
+  <div class="container">
+    <!-- 상단 컨트롤 바 -->
+    <div class="control-bar">
+      <div class="search-and-filter">
+        <input type="text" id="searchInput" placeholder="개념 검색..." class="search-box">
+        <details id="filterDetails" class="filter-details">
+          <summary class="filter-summary">필터 ▼</summary>
+          <div class="filter-content">
+            <div style="margin-bottom: 0.75rem;">
+              <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-secondary);">범주</div>
+              <div id="categoryFilters" class="category-filters"></div>
+            </div>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-secondary);">관계 유형</div>
+              <div id="layerFilters" class="category-filters"></div>
+            </div>
+          </div>
+        </details>
+      </div>
+      <div class="view-toggle">
+        <button id="toggleGraphView" class="view-btn active">그래프 보기</button>
+        <button id="toggleListView" class="view-btn">목록 보기</button>
+        <button id="themeToggle" class="view-btn" title="테마 전환">🌙</button>
+      </div>
+    </div>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <div class="main-content">
+      <!-- 그래프 뷰 -->
+      <div id="graphView" class="graph-view active">
+        <svg id="networkGraph"></svg>
+        <details id="legendDetails" class="legend" open>
+          <summary class="legend-summary">범주 ▼</summary>
+          <div id="legendItems"></div>
+          <div class="legend-hint">
+            <strong>호버 시:</strong><br>
+            ■ 나가는 연결: <span style="color: #FF2400;">Scarlet</span><br>
+            ■ 들어오는 연결: <span style="color: #00CDE1;">Turquoise</span>
+          </div>
+        </details>
+      </div>
+
+      <!-- 목록 뷰 -->
+      <div id="listView" class="list-view">
+        <table id="conceptTable" class="concept-table">
+          <thead>
+            <tr>
+              <th>개념</th>
+              <th>색상</th>
+              <th>시간</th>
+              <th>반경</th>
+              <th>장/페이지</th>
+              <th>연결 관계</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 노드 상세 패널 -->
+  <div id="detailPanel" class="detail-panel hidden">
+    <button id="closePanel" class="close-btn">&times;</button>
+    <div class="detail-content">
+      <h2 id="detailLabel"></h2>
+      <div class="detail-meta">
+        <span id="detailCategory" class="category-badge"></span>
+        <span id="detailLocation"></span>
+      </div>
+      <div class="detail-quote">
+        <h4>원문</h4>
+        <p id="detailQuote"></p>
+      </div>
+      <div class="detail-note">
+        <h4>메모</h4>
+        <p id="detailNote"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- D3.js 로드 (CDN) -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- 앱 로직 -->
+  <script src="app.js?v=3"></script>
+</body>
+</html>
